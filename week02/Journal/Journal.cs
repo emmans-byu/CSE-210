@@ -32,7 +32,7 @@ public class Journal
     public void LoadFromFile(string file)
     {
         List<Entry> _entries = new List<Entry>();
-        string filename = "Journal.txt";
+        string filename = file;
         string[] lines = System.IO.File.ReadAllLines(filename);
 
         foreach (string line in lines)
